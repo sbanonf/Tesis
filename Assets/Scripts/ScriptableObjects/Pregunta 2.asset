@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7290afaf262117e4682c07e51d369b1c, type: 3}
+  m_Name: Pregunta 2
+  m_EditorClassIdentifier: 
+  pregunta: "\xBFQue letra es B?"
+  rptas:
+  - {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}
+  - {fileID: 11400000, guid: f1d9b64a8a787004b8b54d6b017cd72e, type: 2}
+  - {fileID: 11400000, guid: 7396bb67869587f43aa843fd0f6a15e0, type: 2}
+  rptac: {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}

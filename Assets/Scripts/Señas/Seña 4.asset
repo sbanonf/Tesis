@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255e1686086cc79489bb3ee722d6d95c, type: 3}
   m_Name: "Se\xF1a 4"
   m_EditorClassIdentifier: 
-  Descripcion: "Esta se\xF1a significa el numero 4.\nPara ello utiliza una mano."
-  img: {fileID: 21300000, guid: 45857efbb3eb7d74d86f63c16ca83057, type: 3}
+  Descripcion: "Esta se\xF1a significa el numero D."
+  img: {fileID: -912276895, guid: 60d86cdbfbaedf344ae0313381c09d5c, type: 3}
   Activo: 0

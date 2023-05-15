@@ -9,6 +9,9 @@ public class Runa : MonoBehaviour
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
+        if (seña.Activo == true) {
+            seña.Activo = false;
+        }
     }
     private void Start()
     {
@@ -17,6 +20,7 @@ public class Runa : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")) {
+            AudioManager.instance.Play("Rec");
             seña.Activo = true;
             RunesManager.Instance.Aumentar();
             Destroy(this.gameObject);

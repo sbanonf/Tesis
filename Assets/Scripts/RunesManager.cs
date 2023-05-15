@@ -25,9 +25,9 @@ public class RunesManager : MonoBehaviour
     public void Aumentar() {
         RunesManager.Instance.cantidad += 1;
     }
-    private void Update()
-    {
-        
+
+    public void Reiniciar() {
+        RunesManager.Instance.cantidad = 0;
     }
 
 

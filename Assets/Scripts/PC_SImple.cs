@@ -34,6 +34,7 @@ public class PC_SImple : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
             //Rango Vector2.up (y=-1, y=1)
+           // AudioManager.instance.Play("Jump");
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
