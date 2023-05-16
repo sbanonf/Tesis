@@ -21,20 +21,6 @@ public class CheckpointManager : MonoBehaviour
     public void SetIndex(int checkpointIndex)
     {
         index = checkpointIndex;
-
-        for(int i = 0; i < checkPoints.Count; i++)
-        {
-            if (checkpointIndex == i)
-            {
-                if (!checkPoints[i].isSelected)
-                {
-                    checkPoints[i].SetAnimation(true);
-                    SoundManager.Instance.PlayCheckpoint();
-                }
-            }
-            else
-                checkPoints[i].SetAnimation(false);
-        }
     }
 
     public Transform GetCurrentPoint()

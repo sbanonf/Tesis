@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PC_SImple : MonoBehaviour
 {
-    private Rigidbody2D rb;
+    public Rigidbody2D rb;
+    private Animator _anim;
 
     public float speed;
     public float jumpForce;
@@ -25,6 +26,7 @@ public class PC_SImple : MonoBehaviour
     {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
+        _anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,14 +35,20 @@ public class PC_SImple : MonoBehaviour
         //Presionas ESPACIO para saltar, y tienes saltos
         if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
         {
+ 
+            _anim.SetBool("Idle", false);
+            _anim.SetBool("Jump", true);
             //Rango Vector2.up (y=-1, y=1)
-           // AudioManager.instance.Play("Jump");
+            // AudioManager.instance.Play("Jump");
             rb.velocity = Vector2.up * jumpForce;
             extraJumps--;
         }
 
         else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGround == true)
         {
+            _anim.SetBool("Idle", false);
+            _anim.SetBool("Jump", true);
+            AudioManager.instance.Play("Jump");
             rb.velocity = Vector2.up * jumpForce;
             extraJumps = extraJumpsValue;
         }
@@ -50,12 +58,23 @@ public class PC_SImple : MonoBehaviour
         moveInput = Input.GetAxis("Horizontal");
 
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
+        if (moveInput == 0 && rb.velocity.y <= 0 && isGround==true)
+        {
+            _anim.SetBool("Jump", false);
+            _anim.SetBool("Idle", true);
+        }
+        else if(rb.velocity.y <= 0 && rb.velocity.x != 0 && isGround==true)
+        {
+            _anim.SetBool("Jump", false);
+            _anim.SetBool("Idle", false);
+        }
+
 
         if (facingRigth == false && moveInput > 0)
             Flip();
         else if (facingRigth == true && moveInput < 0)
             Flip();
-
+       
 
     }
 

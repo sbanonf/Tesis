@@ -8,12 +8,7 @@ public class DeathZone : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-           // collision.GetComponent<PlayerController>().Respawn();
-        }
-
-        if (collision.CompareTag("Enemy"))
-        {
-           // Destroy(collision.gameObject);
+            collision.GetComponent<PlayerHealth>().Respawn();
         }
     }
 }

@@ -49,6 +49,14 @@ public class PlayerHealth : MonoBehaviour
         else
         {
             
+            maxLife = 0;
+            currentLife = 0;
+            Init();
+            GetComponent<Transform>().position = CheckpointManager.Instance.GetCurrentPoint().position;            
         }
+    }
+    public void Respawn() {
+        DealDamage();
+        GetComponent<Transform>().position = CheckpointManager.Instance.GetCurrentPoint().position;
     }
 }
