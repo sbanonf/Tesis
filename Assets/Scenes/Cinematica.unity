@@ -250,7 +250,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Un proyecto de: Ba\xF1on Studios "
+  m_text: "Un proyecto de: Ba\xF1on Studios"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
@@ -1071,7 +1071,43 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Jump
-    clip: {fileID: 8300000, guid: 0faecd467af2a824cb97dd39daacf63a, type: 3}
+    clip: {fileID: 8300000, guid: dca5cc2b68272b8498e62ddef3378e0a, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: correct
+    clip: {fileID: 8300000, guid: a3813214a744fb54eb49b0f2c482a27c, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: error
+    clip: {fileID: 8300000, guid: 8fbbd8f8ed2b2b541908ef722311db09, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: "da\xF1o"
+    clip: {fileID: 8300000, guid: 33cbb71053d8278469dd0f0411e134f3, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: cerrarbolsa
+    clip: {fileID: 8300000, guid: e5edf8192cc15004abc9d122ed1eee57, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: abrirbolsa
+    clip: {fileID: 8300000, guid: dca5cc2b68272b8498e62ddef3378e0a, type: 3}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: respawn
+    clip: {fileID: 8300000, guid: 366ac11fc56ff4a499fee3ee2fca765b, type: 3}
     volume: 0.3
     pitch: 1
     loop: 0

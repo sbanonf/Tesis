@@ -35,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void DealDamage()
     {
+        AudioManager.instance.Play("daño");
         currentLife = Mathf.Clamp(currentLife - 1, 0, maxLife);
         int tempIndex = currentLife / 2;
         print(tempIndex);
@@ -43,12 +44,11 @@ public class PlayerHealth : MonoBehaviour
             heartImages[tempIndex].sprite = emptySprite;
         else if (currentLife % 2 == 1)
             heartImages[tempIndex].sprite = halfSprite;
-
+        
         if (currentLife > 0)
             return;
         else
         {
-            
             maxLife = 0;
             currentLife = 0;
             Init();
@@ -57,6 +57,7 @@ public class PlayerHealth : MonoBehaviour
     }
     public void Respawn() {
         DealDamage();
+        AudioManager.instance.Play("respawn");
         GetComponent<Transform>().position = CheckpointManager.Instance.GetCurrentPoint().position;
     }
 }

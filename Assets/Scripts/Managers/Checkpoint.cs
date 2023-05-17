@@ -37,7 +37,7 @@ public class Checkpoint : MonoBehaviour
         {
             CheckpointManager.Instance.SetIndex(index);
             TurnOnParticle();
-            AudioManager.instance.Play("Checkpoint");
+            AudioManager.instance.Play("respawn");
         }
     }
 }
