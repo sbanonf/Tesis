@@ -653,8 +653,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFDonde estoy?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -962,8 +962,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1\xBFQuien eres?!... Espera"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1353,14 +1353,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: estaba leyendo esta historia, hasta que de pronto...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1508,8 +1508,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xBFQue le paso a mi voz?"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1902,14 +1902,14 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\xA1despert\xE9 en el mundo del cuento!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 16777215
+    rgba: 4294967295
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3

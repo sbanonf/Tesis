@@ -17,7 +17,7 @@ public class Trampoline : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
 
-            PC_SImple pc_simple = collision.gameObject.GetComponent<PC_SImple>();
+            PC_Simple pc_simple = collision.gameObject.GetComponent<PC_Simple>();
             pc_simple.rb.velocity = Vector2.up * trampolineJumpPower;
         }
     }

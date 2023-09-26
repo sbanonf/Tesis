@@ -47,12 +47,12 @@ public class PeleaManager : MonoBehaviour
             int escenaActual = SceneManager.GetActiveScene().buildIndex;
             SceneManager.LoadScene(escenaActual);
         }
-        else if (mSlider.value >= mSlider.maxValue) { 
-            //nivel 2.
+        else if (mSlider.value >= mSlider.maxValue) {
+            SceneManager.LoadScene("Nivel 2");
         }
     }
     public void Disminuir() {
-        //AudioManager.instance.Play("error");
+        AudioManager.instance.Play("error");
         mSlider.value--;
         RectTransform rect = pelea.GetComponent<RectTransform>();
         if (rect.anchoredPosition.x > -401.8)
@@ -61,7 +61,7 @@ public class PeleaManager : MonoBehaviour
         }
     }
     public void Aumentar() {
-        //AudioManager.instance.Play("correct");
+        AudioManager.instance.Play("correct");
         mSlider.value++;
         RectTransform rect = pelea.GetComponent<RectTransform>();
         if (rect.anchoredPosition.x < 331) {

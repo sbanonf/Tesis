@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class PC_SImple : MonoBehaviour
+public class PC_Simple : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Animator _anim;
@@ -19,7 +21,7 @@ public class PC_SImple : MonoBehaviour
     private int extraJumps;
     public int extraJumpsValue;
 
-    private bool facingRigth = true;
+    private bool facingRight = true;
 
     // Start is called before the first frame update
     void Start()
@@ -32,64 +34,93 @@ public class PC_SImple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Presionas ESPACIO para saltar, y tienes saltos
-        if (Input.GetKeyDown(KeyCode.Space) && extraJumps > 0)
+        // Detectar entrada móvil
+        if (Application.isMobilePlatform)
         {
- 
-            _anim.SetBool("Idle", false);
-            _anim.SetBool("Jump", true);
-            //Rango Vector2.up (y=-1, y=1)
-            // AudioManager.instance.Play("Jump");
-            rb.velocity = Vector2.up * jumpForce;
-            extraJumps--;
+            ProcessMobileInput();
+        }
+        else
+        {
+            // Control en PC
+            moveInput = Input.GetAxis("Horizontal");
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Jump();
+            }
         }
 
-        else if (Input.GetKeyDown(KeyCode.Space) && extraJumps == 0 && isGround == true)
-        {
-            _anim.SetBool("Idle", false);
-            _anim.SetBool("Jump", true);
-            AudioManager.instance.Play("Jump");
-            rb.velocity = Vector2.up * jumpForce;
-            extraJumps = extraJumpsValue;
-        }
+        ProcessMovement();
+    }
 
+    void ProcessMobileInput()
+    {
+        // Implementa tus funciones de movimiento móvil aquí
+        // Por ejemplo, puedes llamar a MoveRight, MoveLeft o StopMoving según la entrada táctil
+    }
+
+    void ProcessMovement()
+    {
         isGround = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
 
-        moveInput = Input.GetAxis("Horizontal");
-
         rb.velocity = new Vector2(moveInput * speed, rb.velocity.y);
-        if (moveInput == 0 && rb.velocity.y <= 0 && isGround==true)
+
+        if (moveInput == 0 && rb.velocity.y <= 0 && isGround)
         {
             _anim.SetBool("Jump", false);
             _anim.SetBool("Idle", true);
         }
-        else if(rb.velocity.y <= 0 && rb.velocity.x != 0 && isGround==true)
+        else if (rb.velocity.y <= 0 && rb.velocity.x != 0 && isGround)
         {
             _anim.SetBool("Jump", false);
             _anim.SetBool("Idle", false);
         }
 
-
-        if (facingRigth == false && moveInput > 0)
+        if (facingRight && moveInput < 0)
+        {
             Flip();
-        else if (facingRigth == true && moveInput < 0)
+        }
+        else if (!facingRight && moveInput > 0)
+        {
             Flip();
-       
-
+        }
     }
 
-    //Funcion = serie de comando a ejecutar en una cierta ocasión.
+    public void MoveRight()
+    {
+        moveInput = 1f;
+    }
+
+    public void MoveLeft()
+    {
+        moveInput = -1f;
+    }
+
+    public void StopMoving()
+    {
+        moveInput = 0f;
+    }
+
+    public void Jump()
+    {
+        if (isGround || extraJumps > 0)
+        {
+            _anim.SetBool("Idle", false);
+            _anim.SetBool("Jump", true);
+            rb.velocity = Vector2.up * jumpForce;
+            extraJumps--;
+        }
+    }
+
     void Flip()
     {
-        facingRigth = !facingRigth;
-        Vector3 Scaler = transform.localScale;
-        Scaler.x *= -1;
-        transform.localScale = Scaler;
+        facingRight = !facingRight;
+        Vector3 scaler = transform.localScale;
+        scaler.x *= -1;
+        transform.localScale = scaler;
     }
 
     void OnDrawGizmosSelected()
     {
-        //El objeto central, el rango del circulo
         Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
     }
 }

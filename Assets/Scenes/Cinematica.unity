@@ -250,10 +250,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Un proyecto de: Ba\xF1on Studios"
+  m_text: 'Un proyecto de: Banon Studios'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
+  m_sharedMaterial: {fileID: -821405463041412220, guid: 61ad892881e7c1f4eac8d4923b12b1d6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

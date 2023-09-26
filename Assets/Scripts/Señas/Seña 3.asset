@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255e1686086cc79489bb3ee722d6d95c, type: 3}
   m_Name: "Se\xF1a 3"
   m_EditorClassIdentifier: 
-  Descripcion: "Esta se\xF1a significa el numero C."
+  Descripcion: "Esta se\xF1a significa la letra C."
   img: {fileID: 1775471728, guid: 60d86cdbfbaedf344ae0313381c09d5c, type: 3}
   Activo: 0
