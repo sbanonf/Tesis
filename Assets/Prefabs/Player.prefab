@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5613017051897778733}
   - component: {fileID: 5613017051897778734}
-  - component: {fileID: 5613017051897778735}
+  - component: {fileID: 4054598835932673141}
   - component: {fileID: 5613017051897778728}
   - component: {fileID: 5613017051897778732}
   - component: {fileID: 5613017051897778739}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5613017051897778735
+--- !u!114 &4054598835932673141
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -102,10 +102,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6d2f257f6c7cb8458c2d544b87654ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 8
+  rb: {fileID: 0}
+  speed: 6
+  jumpForce: 7
   groundCheck: {fileID: 5613017053557608786}
-  checkRadius: 0.25
+  checkRadius: 0.5
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8

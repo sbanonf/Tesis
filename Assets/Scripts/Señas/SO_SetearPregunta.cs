@@ -8,13 +8,12 @@ public class SO_SetearPregunta : MonoBehaviour
 {
     public ScriptablePregunta pregunta;
     private TextMeshProUGUI texto;
-    private Image[] images;
+    public  Image[] images;
 
     // Start is called before the first frame update
     void Start()
     {
         texto = GetComponentInChildren<TextMeshProUGUI>();
-        images = GetComponentsInChildren<Image>();
         texto.text = pregunta.pregunta;
         for (int i = 0; i < images.Length; i++) {
             images[i].sprite = pregunta.rptas[i].img;

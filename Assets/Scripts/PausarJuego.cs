@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PausarJuego : MonoBehaviour
 {
     public static bool JuegoPausado = false;
     public GameObject menuPausaUI;
+    public GameObject canva;
+    public GameObject pokemon;
 
     void Update()
     {
@@ -25,13 +28,15 @@ public class PausarJuego : MonoBehaviour
     public void Reanudar()
     {
         menuPausaUI.SetActive(false);
+        canva.SetActive(true);
         Time.timeScale = 1f;
         JuegoPausado = false;
     }
 
-    void Pausar()
+    public void Pausar()
     {
         menuPausaUI.SetActive(true);
+        canva.SetActive(false);
         Time.timeScale = 0f;
         JuegoPausado = true;
     }
@@ -39,13 +44,12 @@ public class PausarJuego : MonoBehaviour
     public void CargarMenuPrincipal()
     {
         Time.timeScale = 1f;
-        // Código para cargar el menú principal
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     public void SalirJuego()
     {
-        // Código para salir del juego
-        Debug.Log("Saliendo del juego...");
         Application.Quit();
     }
 

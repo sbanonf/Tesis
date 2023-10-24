@@ -9071,11 +9071,11 @@ PrefabInstance:
     - target: {fileID: 567070169159732088, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 567070169159732088, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 567070169159732088, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoveLeft
@@ -9119,7 +9119,7 @@ PrefabInstance:
     - target: {fileID: 4742396238262962251, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 4742396238262962251, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -9139,11 +9139,11 @@ PrefabInstance:
     - target: {fileID: 5769748939357450080, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769748939357450080, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[1].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 5769748939357450080, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: MoveRight
@@ -9215,7 +9215,7 @@ PrefabInstance:
     - target: {fileID: 7366004663566044116, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 7366004663566044116, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -9235,7 +9235,7 @@ PrefabInstance:
     - target: {fileID: 7513027413807060464, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1951064642}
+      objectReference: {fileID: 0}
     - target: {fileID: 7513027413807060464, guid: 50f7d9fd48b02364482db4e303289f3d, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Jump
@@ -9577,19 +9577,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 5613017051897778735, guid: da7e57d96f4a8f940af5e29ae23d4ae2, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: da7e57d96f4a8f940af5e29ae23d4ae2, type: 3}
---- !u!114 &1951064642 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5613017051897778735, guid: da7e57d96f4a8f940af5e29ae23d4ae2, type: 3}
-  m_PrefabInstance: {fileID: 1924570698}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6d2f257f6c7cb8458c2d544b87654ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1951064645 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5613017051897778732, guid: da7e57d96f4a8f940af5e29ae23d4ae2, type: 3}

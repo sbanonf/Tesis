@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class PC_Simple : MonoBehaviour
+public class PC : MonoBehaviour
 {
     public Rigidbody2D rb;
     private Animator _anim;

@@ -18,7 +18,7 @@ public class Trampoline : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            PC_Simple pc_simple = collision.gameObject.GetComponent<PC_Simple>();
+            PC pc_simple = collision.gameObject.GetComponent<PC>();
             pc_simple.rb.velocity = Vector2.up * trampolineJumpPower;
             animator.SetBool("Contacto", true); // Establecer el parámetro de animación "Contacto" en verdadero cuando hay contacto.
         }

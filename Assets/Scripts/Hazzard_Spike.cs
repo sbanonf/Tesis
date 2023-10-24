@@ -6,14 +6,14 @@ public class Hazzard_Spike : MonoBehaviour
 {
     //Si el personaje entra en contacto con este objeto
     //Bajale vida.
-    private PC_Simple pc_simple;
+    private PC pc_simple;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
 
             collision.gameObject.GetComponent<PlayerHealth>().DealDamage();
-            pc_simple = collision.gameObject.GetComponent<PC_Simple>();
+            pc_simple = collision.gameObject.GetComponent<PC>();
             pc_simple.rb.velocity = Vector2.up * pc_simple.jumpForce;
         }
     }
@@ -23,7 +23,7 @@ public class Hazzard_Spike : MonoBehaviour
         {
 
             collision.gameObject.GetComponent<PlayerHealth>().DealDamage();
-            pc_simple = collision.gameObject.GetComponent<PC_Simple>();
+            pc_simple = collision.gameObject.GetComponent<PC>();
             pc_simple.rb.velocity = Vector2.up * pc_simple.jumpForce;
         }
     }

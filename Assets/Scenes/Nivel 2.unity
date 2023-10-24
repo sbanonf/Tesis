@@ -3962,6 +3962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 0}
+  text2: {fileID: 0}
   gameObject: {fileID: 137850575}
   cont: 0
 --- !u!1 &1545317827
