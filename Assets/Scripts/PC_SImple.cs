@@ -88,11 +88,13 @@ public class PC_Simple : MonoBehaviour
     public void MoveRight()
     {
         moveInput = 1f;
+        Debug.Log("Hola me muevo");
     }
 
     public void MoveLeft()
     {
         moveInput = -1f;
+        Debug.Log("Hola me muevo");
     }
 
     public void StopMoving()
