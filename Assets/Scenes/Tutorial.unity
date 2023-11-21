@@ -4377,8 +4377,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "RECOLECTA LAS SE\xD1AS."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
+  m_sharedMaterial: {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4467,7 +4467,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  - {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5001,8 +5001,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: EVITA LOS PELIGROS.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
+  m_sharedMaterial: {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5091,7 +5091,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  - {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5864,8 +5864,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: HAZ CLICK EN LA MOCHILA
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
+  m_sharedMaterial: {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5954,7 +5954,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  - {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9248,8 +9248,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'ENTRA EN LA PUERTA '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
-  m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
+  m_sharedMaterial: {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -9338,7 +9338,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
+  - {fileID: -4055303808107584375, guid: 896faafe11585c1438b3bdbb2f6c5118, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
