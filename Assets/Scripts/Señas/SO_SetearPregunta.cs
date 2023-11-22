@@ -19,12 +19,12 @@ public class SO_SetearPregunta : MonoBehaviour
             images[i].sprite = pregunta.rptas[i].img;
             if (pregunta.rptas[i].img == pregunta.rptac.img)
             {
-                images[i].GetComponent<Button>().onClick.AddListener(PeleaManager.Instance.Aumentar);
-                images[i].GetComponent<Button>().onClick.AddListener(Destruirse);
+                images[i].gameObject.GetComponent<Button>().onClick.AddListener(PeleaManager.Instance.Aumentar);
+                images[i].gameObject.GetComponent<Button>().onClick.AddListener(Destruirse);
             }
             else {
-                images[i].GetComponent<Button>().onClick.AddListener(PeleaManager.Instance.Disminuir);
-                images[i].GetComponent<Button>().onClick.AddListener(Destruirse);
+                images[i].gameObject.GetComponent<Button>().onClick.AddListener(PeleaManager.Instance.Disminuir);
+                images[i].gameObject.GetComponent<Button>().onClick.AddListener(Destruirse);
             }
         }
        
