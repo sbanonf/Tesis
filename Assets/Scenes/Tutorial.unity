@@ -3917,6 +3917,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4584721656984964784, guid: c72dbd13e7afbf046bbcbedabf8a5911, type: 3}
+      propertyPath: gameObject
+      value: 
+      objectReference: {fileID: 137850575}
     - target: {fileID: 4584721656984964785, guid: c72dbd13e7afbf046bbcbedabf8a5911, type: 3}
       propertyPath: m_FillRect
       value: 
@@ -3988,6 +3992,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4584721656558412692, guid: c72dbd13e7afbf046bbcbedabf8a5911, type: 3}
   m_PrefabInstance: {fileID: 540030314}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &540030316 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4584721655796980293, guid: c72dbd13e7afbf046bbcbedabf8a5911, type: 3}
+  m_PrefabInstance: {fileID: 540030314}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53e2a11a3ccc3104c80cfed7393fc6a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &590703973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4634,7 +4649,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   "se\xF1a": {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
-  lifetime: {fileID: 0}
+  lifetime: {fileID: 540030316}
 --- !u!1 &915666434
 GameObject:
   m_ObjectHideFlags: 3
