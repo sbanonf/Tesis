@@ -4165,7 +4165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677384723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.701813, y: 0.3527801, z: -10}
+  m_LocalPosition: {x: 2.6819117, y: 0.3527801, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4537,7 +4537,7 @@ GameObject:
   - component: {fileID: 883729837}
   - component: {fileID: 883729840}
   m_Layer: 0
-  m_Name: "Se\xF1a1"
+  m_Name: Senia1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4648,7 +4648,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
+  senia: {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
   lifetime: {fileID: 540030316}
 --- !u!1 &915666434
 GameObject:
@@ -5394,7 +5394,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258399280}
   m_Layer: 0
-  m_Name: "Se\xF1as"
+  m_Name: Senias
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12993,7 +12993,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 2499937129919752516}
   image: {fileID: 2499937130809214171}
-  "se\xF1a": {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
+  senia: {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
 --- !u!224 &2499937131683574558
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13032,7 +13032,7 @@ GameObject:
   - component: {fileID: 2499937131683574558}
   - component: {fileID: 2499937131683574557}
   m_Layer: 0
-  m_Name: "Se\xF1a"
+  m_Name: Senia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

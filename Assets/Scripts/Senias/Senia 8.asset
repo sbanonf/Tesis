@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 255e1686086cc79489bb3ee722d6d95c, type: 3}
-  m_Name: "Se\xF1a 4"
+  m_Name: Senia 8
   m_EditorClassIdentifier: 
-  Descripcion: "Esta se\xF1a significa la letra D."
-  img: {fileID: -912276895, guid: 60d86cdbfbaedf344ae0313381c09d5c, type: 3}
+  Descripcion: "Esta se\xF1a significa la letra H."
+  img: {fileID: 1834318591, guid: 60d86cdbfbaedf344ae0313381c09d5c, type: 3}
   Activo: 0

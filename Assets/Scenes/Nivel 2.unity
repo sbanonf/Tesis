@@ -2736,7 +2736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677384723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.7018137, y: 0.35277987, z: -10}
+  m_LocalPosition: {x: 2.6819067, y: 0.35277987, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3684,7 +3684,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1258399280}
   m_Layer: 0
-  m_Name: "Se\xF1as"
+  m_Name: Senias
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6838,7 +6838,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 368163606243357301}
   image: {fileID: 368163606398460044}
-  "se\xF1a": {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
+  senia: {fileID: 0}
 --- !u!1 &368163605137079182
 GameObject:
   m_ObjectHideFlags: 0
@@ -7548,7 +7548,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 3676205907140989287}
   image: {fileID: 3676205908318386362}
-  "se\xF1a": {fileID: 11400000, guid: 2491320799492cd4f9cbca891de1626b, type: 2}
+  senia: {fileID: 0}
 --- !u!222 &3676205906934565599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7754,7 +7754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 3676205907605327699}
   image: {fileID: 3676205907388254033}
-  "se\xF1a": {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}
+  senia: {fileID: 0}
 --- !u!224 &3676205907140989280
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8719,7 +8719,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 3676205907690828218}
   image: {fileID: 3676205908268490575}
-  "se\xF1a": {fileID: 11400000, guid: 8c373631a419dc3408207bcef32a08b6, type: 2}
+  senia: {fileID: 0}
 --- !u!224 &3676205908043360708
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8774,7 +8774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 3676205907310492860}
   image: {fileID: 3676205908309685689}
-  "se\xF1a": {fileID: 11400000, guid: 48d06118d2c036b4db8f4e245d96f96a, type: 2}
+  senia: {fileID: 0}
 --- !u!222 &3676205908043360763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9025,7 +9025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Text: {fileID: 3676205906943780351}
   image: {fileID: 3676205907722653005}
-  "se\xF1a": {fileID: 11400000, guid: f1d9b64a8a787004b8b54d6b017cd72e, type: 2}
+  senia: {fileID: 0}
 --- !u!222 &3676205908470450349
 CanvasRenderer:
   m_ObjectHideFlags: 0
