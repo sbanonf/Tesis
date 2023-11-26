@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "New Seña", menuName = "Señas/Seña")]
-public class ScriptableSeñas : ScriptableObject
+[CreateAssetMenu(fileName = "New Senia", menuName = "Señas/Seña")]
+public class ScriptableSenias : ScriptableObject
 {
     [TextAreaAttribute]
     public string Descripcion;

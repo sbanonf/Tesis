@@ -5,27 +5,27 @@ using UnityEngine.UI;
 
 public class Runa : MonoBehaviour
 {
-    public ScriptableSeñas seña;
+    public ScriptableSenias senia;
     private SpriteRenderer sprite;
     public LifeTime lifetime;
     private void Awake()
     {
         sprite = GetComponent<SpriteRenderer>();
-        if (seña.Activo == true) {
-            seña.Activo = false;
+        if (senia.Activo == true) {
+            senia.Activo = false;
         }
     }
     private void Start()
     {
-        sprite.sprite = seña.img;
+        sprite.sprite = senia.img;
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player")) {
             lifetime.gameObject.SetActive(true);
-            lifetime.Setear(seña);
+            lifetime.Setear(senia);
             AudioManager.instance.Play("Rec");
-            seña.Activo = true;
+            senia.Activo = true;
             RunesManager.Instance.Aumentar();
             Destroy(this.gameObject);
         }           

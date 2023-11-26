@@ -8,7 +8,7 @@ public class SO_SetearSeñas : MonoBehaviour
 {
     public TextMeshProUGUI Text;
     public Image image;
-    public ScriptableSeñas seña;
+    public ScriptableSenias senia;
 
     private void Awake()
     {
@@ -16,9 +16,9 @@ public class SO_SetearSeñas : MonoBehaviour
     }
     private void Update()
     {
-        if (seña.Activo) {
-            Text.text = seña.Descripcion;
-            image.sprite = seña.img;
+        if (senia.Activo) {
+            Text.text = senia.Descripcion;
+            image.sprite = senia.img;
             image.color = Color.white;
         }
     }

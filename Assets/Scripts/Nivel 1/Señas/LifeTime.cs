@@ -11,7 +11,7 @@ public class LifeTime : MonoBehaviour
         child = GetComponentsInChildren<Image>(true);
     }
 
-    public void Setear(ScriptableSeñas so) {
+    public void Setear(ScriptableSenias so) {
         child[1].sprite = so.img;
         Invoke("OcultarPopup", 3f);
     }
