@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "New Senia", menuName = "Senias/Senia")]
-public class ScriptableSenias : ScriptableObject
+[CreateAssetMenu(fileName = "New Senia", menuName = "Senias/FamiliaSenia")]
+public class ScriptableSeniasFamiliar : ScriptableObject
 {
     [TextAreaAttribute]
     public string Descripcion;
-    public Sprite img;
+    public List<Sprite> imgs=new List<Sprite>();
     public bool Activo;
 }

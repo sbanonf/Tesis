@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1bf683fb79f187348bcd2b7937b5933f
+guid: 990a8d4fa409d49da9bbb3b40005669f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -114,7 +114,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: WebGL
+    buildTarget: iPhone
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,7 +126,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -141,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_0
+      name: parents_0
       rect:
         serializedVersion: 2
-        x: 180
-        y: 1452
-        width: 575
-        height: 1028
+        x: 0
+        y: 1035
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -155,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a50b5dcbd2b74422db1cf35a483d1cbe
-      internalID: -1841569102
+      spriteID: 7ceea330dc235465b9373377f0d8a475
+      internalID: 494717582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_1
+      name: parents_1
       rect:
         serializedVersion: 2
-        x: 902
-        y: 1314
-        width: 759
-        height: 1028
+        x: 1588
+        y: 1035
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -176,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f85380576bc940f28ac98f828f28f2d
-      internalID: -597242158
+      spriteID: 449c491ef59254fdeb9602ab3aff00fe
+      internalID: 267604478
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_2
+      name: parents_2
       rect:
         serializedVersion: 2
-        x: 1725
-        y: 1314
-        width: 1099
-        height: 1028
+        x: 3176
+        y: 1035
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc773dd58d7524ddd9101388e4321eb8
-      internalID: 817281364
+      spriteID: 496c7e63e8b3049e487e8e1fd1348e38
+      internalID: -289482157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_3
+      name: parents_3
       rect:
         serializedVersion: 2
-        x: 67
-        y: 292
-        width: 634
-        height: 1028
+        x: 0
+        y: 0
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -218,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ffb8dbabb3d246888a16057d86b0e4f
-      internalID: -1635423346
+      spriteID: 9433a1b1861fe45cebb3fff8b3a36539
+      internalID: 1096858976
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_4
+      name: parents_4
       rect:
         serializedVersion: 2
-        x: 742
-        y: 255
-        width: 674
-        height: 1028
+        x: 1588
+        y: 0
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b4e23ac81742f4817bdafc7ef3f6eefd
-      internalID: -1526787870
+      spriteID: 8f971ed3c8c374f53a531ec6dd7d028d
+      internalID: -1709455322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_6
+      name: parents_5
       rect:
         serializedVersion: 2
-        x: 1523
-        y: 258
-        width: 757
-        height: 1028
+        x: 3176
+        y: 0
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -260,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83e7087131556479182f7f75cf5d607c
-      internalID: -370637814
+      spriteID: 15aa89f6c05f44ef681909f61c8569b7
+      internalID: 164764894
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Suavitel_dib_fin_2_7
+      name: parents_6
       rect:
         serializedVersion: 2
-        x: 2352
-        y: 252
-        width: 1098
-        height: 1028
+        x: 4764
+        y: 0
+        width: 1588
+        height: 1035
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,8 +281,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 10df6722c345c4db7820b770762956de
-      internalID: 1541691349
+      spriteID: 0df2d9c264c69441ca4181c5764f31d7
+      internalID: -529416019
       vertices: []
       indices: 
       edges: []
@@ -298,15 +298,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Suavitel_dib_fin_2_0: -1841569102
-      Suavitel_dib_fin_2_1: -597242158
-      Suavitel_dib_fin_2_2: 817281364
-      Suavitel_dib_fin_2_3: -1635423346
-      Suavitel_dib_fin_2_4: -1526787870
-      Suavitel_dib_fin_2_5: -1694877575
-      Suavitel_dib_fin_2_6: -370637814
-      Suavitel_dib_fin_2_7: 1541691349
-      Suavitel_dib_fin_2_8: -1223312189
+      parents_0: 494717582
+      parents_1: 267604478
+      parents_2: -289482157
+      parents_3: 1096858976
+      parents_4: -1709455322
+      parents_5: 164764894
+      parents_6: -529416019
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
