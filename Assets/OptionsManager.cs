@@ -9,8 +9,6 @@ public class OptionsManager : MonoBehaviour
     [SerializeField] int selectedOption = -1;
     public int SelectedOption => selectedOption;
 
-
-
     private void Awake()
     {
         _instance = this;
@@ -22,6 +20,20 @@ public class OptionsManager : MonoBehaviour
         {
             optionButtons[i].Initialize();
         }
+    }
+
+    public bool HasFinished()
+    {
+        int sum = 0;
+        for (int i = 0; i < optionButtons.Count; i++)
+        {
+            if (optionButtons[i].IsFinished())
+            {
+                sum++;
+            }
+        }
+
+        return sum == optionButtons.Count;
     }
 
     public void SelectOption(OptionButton optionButton)

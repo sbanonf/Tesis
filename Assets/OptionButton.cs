@@ -27,8 +27,6 @@ public class OptionButton : MonoBehaviour
 
     public void FinishTask()
     {
-        Debug.Log(gameObject.name);
-        Debug.Log("CALL STUFF " + scriptable.isFinished);
         if (scriptable.isFinished)
         {
             button.interactable = false;
@@ -39,5 +37,10 @@ public class OptionButton : MonoBehaviour
     public Genealogic_Type GetGenealogicType()
     {
         return scriptable.genealogicType;
+    }
+
+    public bool IsFinished()
+    {
+        return scriptable.isFinished;
     }
 }

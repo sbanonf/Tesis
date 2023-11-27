@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class SlotsManagerUI : MonoBehaviour
 {
-    //[SerializeField] private List<ScriptableFamiliarCardInfo> possibleOptions = new List<ScriptableFamiliarCardInfo>();
     [SerializeField] private List<ItemSlot> slots = new List<ItemSlot>();
 
-    //private Dictionary<string, DND_Symbol_Type> symbolDictionary = new Dictionary<string, DND_Symbol_Type>();
 
     [SerializeField] private List<DraggableSign> draggableOptions = new List<DraggableSign>();
 

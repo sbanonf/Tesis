@@ -8,6 +8,9 @@ public class ValidateManager : MonoBehaviour
 
     public List<bool> validationList = new List<bool>();
 
+    [SerializeField] PopUp levelPopUp;
+    [SerializeField] PopUp endPopup;
+
 
     private void Awake()
     {
@@ -38,6 +41,11 @@ public class ValidateManager : MonoBehaviour
         {
             GenealogicScriptableList._instance.FinishOption();
             OptionsManager._instance.FinishTask();
+
+            levelPopUp.TurnOn();
+
+            if (OptionsManager._instance.HasFinished())
+                endPopup.TurnOn();
             print("EVERYTHING IS FINE, YOU DID IT!");
         }
     }
@@ -45,5 +53,10 @@ public class ValidateManager : MonoBehaviour
     public void CleanValidateManager()
     {
         validationList.Clear();
+    }
+
+    public void ResetLevelPopUp()
+    {
+        levelPopUp.Reset();
     }
 }

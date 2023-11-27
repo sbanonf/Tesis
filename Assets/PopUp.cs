@@ -1,26 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
-public class GenealogicManager : MonoBehaviour
+public class PopUp : MonoBehaviour
 {
-    [SerializeField] GameObject genealogicUI_GO;
+    [Header("Components")]
+    [SerializeField] TextMeshProUGUI textMesh;
+    [SerializeField] GameObject popup_GO;
     [SerializeField] CanvasGroup canvasGroup;
-    Coroutine currentCoroutine = null;
+
+    [Header("Variables")]
+    [SerializeField] string text;
+    [SerializeField] bool willChangeScene;
+    [SerializeField] string sceneName;
 
     [SerializeField] AnimationCurve animCurve;
-    private float scaledTime;
-
-    [Header("Info")]
-    [SerializeField] DragNDropManager dragNDropManager;
-    [SerializeField] Image familiarImage;
-    [SerializeField] TextMeshProUGUI familiarText;
-
+    protected float scaledTime;
+    Coroutine currentCoroutine = null;
 
     private void Start()
     {
+        textMesh.text = text;
         scaledTime = Time.fixedDeltaTime * DialogUtils.timeScaler;
         Initialize();
     }
@@ -29,16 +31,17 @@ public class GenealogicManager : MonoBehaviour
     {
         canvasGroup.CanvasGroupFade(0);
         canvasGroup.CanvasGroupInteractable(false);
-        genealogicUI_GO.SetActive(false);
+        //popup_GO.SetActive(false);
     }
 
-    public void Select()
+
+    public void TurnOn()
     {
         if (currentCoroutine == null)
             currentCoroutine = StartCoroutine(Initialize(true));
     }
 
-    public void Close()
+    public void TurnOff()
     {
         if (currentCoroutine == null)
             currentCoroutine = StartCoroutine(Initialize(false));
@@ -48,15 +51,8 @@ public class GenealogicManager : MonoBehaviour
     {
         if (isFading)
         {
-            ValidateManager._instance.ResetLevelPopUp();
-            genealogicUI_GO.SetActive(true);
+            //popup_GO.SetActive(true);
             yield return null;
-            // Initialize images and text, Initialize signs
-            dragNDropManager.Initialize();
-
-            ScriptableFamiliarCardInfo _ = GenealogicScriptableList._instance.GetSelectedOption();
-            familiarImage.sprite = _.cardSprite;
-            familiarText.text = _.cardName;
 
             // Run Animation for canvas
             for (float i = 0; i < DialogUtils.maxTime; i += scaledTime)
@@ -69,7 +65,6 @@ public class GenealogicManager : MonoBehaviour
         }
         else
         {
-            ValidateManager._instance.CleanValidateManager();
             for (float i = 0; i < DialogUtils.maxTime; i += scaledTime)
             {
                 float tempValue = animCurve.Evaluate(1 - (i / DialogUtils.maxTime));
@@ -77,12 +72,19 @@ public class GenealogicManager : MonoBehaviour
                 yield return null;
             }
             canvasGroup.CanvasGroupInteractable(false);
-            dragNDropManager.Reset();
-            genealogicUI_GO.SetActive(false);
+            //popup_GO.SetActive(false);
+
+            if (willChangeScene)
+                SceneManager.LoadScene(sceneName);
         }
 
         // If close, then empty and reset values
-
         currentCoroutine = null;
+    }
+
+    public void Reset()
+    {
+        canvasGroup.CanvasGroupFade(0);
+        canvasGroup.CanvasGroupInteractable(false);
     }
 }
