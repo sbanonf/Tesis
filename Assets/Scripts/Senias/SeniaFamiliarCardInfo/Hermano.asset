@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa0f5c6f227a743ca94476dcfe404978, type: 3}
+  m_Name: Hermano
+  m_EditorClassIdentifier: 
+  genealogicType: 2
+  cardSprite: {fileID: 21300000, guid: 4ea4d1f88c21f4efb85ca0f5685e3ac2, type: 3}
+  cardName: Hermano
+  charSettings:
+  - sprite: {fileID: 766055638, guid: a65e7357c69e24b8cad6b5be8e6b7679, type: 3}
+    index: 0
+    type: 38
+  - sprite: {fileID: 872346847, guid: a65e7357c69e24b8cad6b5be8e6b7679, type: 3}
+    index: 1
+    type: 39
+  - sprite: {fileID: 1792366271, guid: a65e7357c69e24b8cad6b5be8e6b7679, type: 3}
+    index: 2
+    type: 40
+  - sprite: {fileID: -307946683, guid: a65e7357c69e24b8cad6b5be8e6b7679, type: 3}
+    index: 3
+    type: 41
+  isFinished: 0
+  correctSymbols: 26000000270000002800000029000000
