@@ -12,6 +12,10 @@ public class PeleaManager : MonoBehaviour
     public Image imagenPadre;
     public GameObject prefab;
     public GameObject pelea;
+
+
+    float fixedDeltaTime;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -22,12 +26,15 @@ public class PeleaManager : MonoBehaviour
         {
             Instance = this;
         }
+
+        fixedDeltaTime = Time.fixedDeltaTime;
     }
 
     private void Start()
     {
         mSlider.value = mSlider.maxValue / 2;
-        InvokeRepeating("Disminuir", 0f, 4f);
+        //InvokeRepeating("Disminuir", 0f, 4f);
+        InvokeRepeating("Disminuir", 0f, fixedDeltaTime * 25);
         Seteo();
     }
 
@@ -41,7 +48,6 @@ public class PeleaManager : MonoBehaviour
 
     private void Update()
     {
-
         if (mSlider.value <= mSlider.minValue)
         {
             int escenaActual = SceneManager.GetActiveScene().buildIndex;
@@ -53,7 +59,7 @@ public class PeleaManager : MonoBehaviour
     }
     public void Disminuir() {
         AudioManager.instance.Play("error");
-        mSlider.value--;
+        mSlider.value-= fixedDeltaTime;
         RectTransform rect = pelea.GetComponent<RectTransform>();
         if (rect.anchoredPosition.x > -401.8)
         {
@@ -62,7 +68,9 @@ public class PeleaManager : MonoBehaviour
     }
     public void Aumentar() {
         AudioManager.instance.Play("correct");
-        mSlider.value++;
+        //mSlider.value++;
+        mSlider.value += fixedDeltaTime * 10;
+
         RectTransform rect = pelea.GetComponent<RectTransform>();
         if (rect.anchoredPosition.x < 331) {
             rect.anchoredPosition = new Vector2((rect.anchoredPosition.x + 66.2f), rect.anchoredPosition.y);

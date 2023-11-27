@@ -22347,7 +22347,7 @@ GameObject:
   - component: {fileID: 74396088}
   - component: {fileID: 74396087}
   m_Layer: 0
-  m_Name: "Se\xF1a9"
+  m_Name: Senia9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22380,7 +22380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: f7049e8568030b141bd7226109aa8063, type: 2}
+  senia: {fileID: 11400000, guid: f7049e8568030b141bd7226109aa8063, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &74396088
 BoxCollider2D:
@@ -22676,7 +22676,7 @@ GameObject:
   - component: {fileID: 149005430}
   - component: {fileID: 149005429}
   m_Layer: 0
-  m_Name: "Se\xF1a7"
+  m_Name: Senia7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22709,7 +22709,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 7396bb67869587f43aa843fd0f6a15e0, type: 2}
+  senia: {fileID: 11400000, guid: 7396bb67869587f43aa843fd0f6a15e0, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &149005430
 BoxCollider2D:
@@ -23950,7 +23950,7 @@ GameObject:
   - component: {fileID: 263129852}
   - component: {fileID: 263129851}
   m_Layer: 0
-  m_Name: "Se\xF1a10"
+  m_Name: Senia10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23983,7 +23983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 69af72c60eb43f44fa981e09829f7823, type: 2}
+  senia: {fileID: 11400000, guid: 69af72c60eb43f44fa981e09829f7823, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &263129852
 BoxCollider2D:
@@ -29867,7 +29867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 677384723}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.2361045, y: -0.26100993, z: -10}
+  m_LocalPosition: {x: 3.236267, y: -0.26100993, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30154,7 +30154,7 @@ GameObject:
   - component: {fileID: 799168581}
   - component: {fileID: 799168580}
   m_Layer: 0
-  m_Name: "Se\xF1a5"
+  m_Name: Senia5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30172,7 +30172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 8c373631a419dc3408207bcef32a08b6, type: 2}
+  senia: {fileID: 11400000, guid: 8c373631a419dc3408207bcef32a08b6, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &799168581
 BoxCollider2D:
@@ -30462,7 +30462,7 @@ GameObject:
   - component: {fileID: 883729837}
   - component: {fileID: 883729840}
   m_Layer: 0
-  m_Name: "Se\xF1a1"
+  m_Name: Senia1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30573,7 +30573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
+  senia: {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!4 &901091790 stripped
 Transform:
@@ -30593,7 +30593,7 @@ GameObject:
   - component: {fileID: 904705256}
   - component: {fileID: 904705255}
   m_Layer: 0
-  m_Name: "Se\xF1a4"
+  m_Name: Senia4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30611,7 +30611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 48d06118d2c036b4db8f4e245d96f96a, type: 2}
+  senia: {fileID: 11400000, guid: 48d06118d2c036b4db8f4e245d96f96a, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &904705256
 BoxCollider2D:
@@ -31122,7 +31122,7 @@ GameObject:
   - component: {fileID: 988181813}
   - component: {fileID: 988181812}
   m_Layer: 0
-  m_Name: "Se\xF1a8"
+  m_Name: Senia8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31155,7 +31155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 3c387f7063397574295134a30174f2c4, type: 2}
+  senia: {fileID: 11400000, guid: 3c387f7063397574295134a30174f2c4, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &988181813
 BoxCollider2D:
@@ -38634,7 +38634,7 @@ GameObject:
   - component: {fileID: 1376650614}
   - component: {fileID: 1376650613}
   m_Layer: 0
-  m_Name: "Se\xF1a3"
+  m_Name: Senia3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38652,7 +38652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: f1d9b64a8a787004b8b54d6b017cd72e, type: 2}
+  senia: {fileID: 11400000, guid: f1d9b64a8a787004b8b54d6b017cd72e, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &1376650614
 BoxCollider2D:
@@ -45045,7 +45045,7 @@ GameObject:
   - component: {fileID: 1643927790}
   - component: {fileID: 1643927789}
   m_Layer: 0
-  m_Name: "Se\xF1a2"
+  m_Name: Senia2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45063,7 +45063,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}
+  senia: {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &1643927790
 BoxCollider2D:
@@ -46276,7 +46276,7 @@ GameObject:
   - component: {fileID: 2137952087}
   - component: {fileID: 2137952086}
   m_Layer: 0
-  m_Name: "Se\xF1a6"
+  m_Name: Senia6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46309,7 +46309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f59f35d9fafc27d4eb46ade95b350ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "se\xF1a": {fileID: 11400000, guid: 2491320799492cd4f9cbca891de1626b, type: 2}
+  senia: {fileID: 11400000, guid: 2491320799492cd4f9cbca891de1626b, type: 2}
   lifetime: {fileID: 1423755493}
 --- !u!61 &2137952087
 BoxCollider2D:
@@ -47992,6 +47992,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080077790867288, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 7396bb67869587f43aa843fd0f6a15e0, type: 2}
     - target: {fileID: 8628080077790867289, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48007,6 +48011,10 @@ PrefabInstance:
     - target: {fileID: 8628080077790867289, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080077790867294, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia7
       objectReference: {fileID: 0}
     - target: {fileID: 8628080077814267880, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_text
@@ -48028,6 +48036,14 @@ PrefabInstance:
       propertyPath: m_text
       value: '?'
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080078234503392, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080078234503394, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 48d06118d2c036b4db8f4e245d96f96a, type: 2}
     - target: {fileID: 8628080078234503395, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48044,6 +48060,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080078316432216, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: f1d9b64a8a787004b8b54d6b017cd72e, type: 2}
     - target: {fileID: 8628080078316432217, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48060,6 +48080,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080078316432222, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080078519375145, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 69af72c60eb43f44fa981e09829f7823, type: 2}
     - target: {fileID: 8628080078519375150, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48075,6 +48103,10 @@ PrefabInstance:
     - target: {fileID: 8628080078519375150, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080078519375151, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia10
       objectReference: {fileID: 0}
     - target: {fileID: 8628080078612669706, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
@@ -48092,6 +48124,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080078612669707, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080078612669717, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 8c373631a419dc3408207bcef32a08b6, type: 2}
     - target: {fileID: 8628080078658475834, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_text
       value: '?'
@@ -48120,6 +48160,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080079050886497, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080079050886499, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 443e3ebe142e6d94fbc917d42093c831, type: 2}
+    - target: {fileID: 8628080079245031429, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c387f7063397574295134a30174f2c4, type: 2}
     - target: {fileID: 8628080079245031482, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48135,6 +48187,10 @@ PrefabInstance:
     - target: {fileID: 8628080079245031482, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080079245031483, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia8
       objectReference: {fileID: 0}
     - target: {fileID: 8628080079259546619, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_text
@@ -48156,6 +48212,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080079268161611, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080079268161621, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: f7049e8568030b141bd7226109aa8063, type: 2}
     - target: {fileID: 8628080079383660411, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_text
       value: '?'
@@ -48164,6 +48228,14 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080079416263896, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080079416263898, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 2b6cd3b899dc3a442852dc0da6f8004e, type: 2}
     - target: {fileID: 8628080079416263899, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48184,6 +48256,10 @@ PrefabInstance:
       propertyPath: m_text
       value: '?'
       objectReference: {fileID: 0}
+    - target: {fileID: 8628080079840290904, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: senia
+      value: 
+      objectReference: {fileID: 11400000, guid: 2491320799492cd4f9cbca891de1626b, type: 2}
     - target: {fileID: 8628080079840290905, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -48199,6 +48275,10 @@ PrefabInstance:
     - target: {fileID: 8628080079840290905, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628080079840290910, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}
+      propertyPath: m_Name
+      value: Senia6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a2dca994559ec346b068ca5ed49d2d7, type: 3}

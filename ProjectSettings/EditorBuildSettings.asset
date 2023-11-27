@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Nivel 1.unity
     guid: 4ce1b54f22208934e98ed946a6f8f6c0
   - enabled: 0
-    path: Assets/Scenes/Inventario.unity
+    path: Assets/Scenes/Not Used/Inventario.unity
     guid: 9c63ef809501d7b4eb7a00685d54d174
   - enabled: 1
     path: Assets/Scenes/Nivel 2.unity
