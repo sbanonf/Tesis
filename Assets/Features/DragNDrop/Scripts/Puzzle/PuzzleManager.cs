@@ -14,7 +14,7 @@ public class PuzzleManager : MonoBehaviour
     private float scaledTime;
 
     [Header("Info")]
-    [SerializeField] DragNDropManager dragNDropManager;
+    [SerializeField] DragNDropPuzzleManager dragNDropManager;
 
     private void Start()
     {
@@ -24,9 +24,11 @@ public class PuzzleManager : MonoBehaviour
 
     public void Initialize()
     {
-        canvasGroup.CanvasGroupFade(0);
-        canvasGroup.CanvasGroupInteractable(false);
-        genealogicUI_GO.SetActive(false);
+        //canvasGroup.CanvasGroupFade(0);
+        //canvasGroup.CanvasGroupInteractable(false);
+        //genealogicUI_GO.SetActive(false);
+        // ! TODO: Change this stuff, is just for testing
+        Select();
     }
 
     public void Select()
@@ -45,7 +47,7 @@ public class PuzzleManager : MonoBehaviour
     {
         if (isFading)
         {
-            ValidateManager._instance.ResetLevelPopUp();
+            ValidateManager_Puzzle._instance.ResetLevelPopUp();
             genealogicUI_GO.SetActive(true);
             yield return null;
             // Initialize images and text, Initialize signs
@@ -64,7 +66,7 @@ public class PuzzleManager : MonoBehaviour
         }
         else
         {
-            ValidateManager._instance.CleanValidateManager();
+            ValidateManager_Puzzle._instance.CleanValidateManager();
             for (float i = 0; i < DialogUtils.maxTime; i += scaledTime)
             {
                 float tempValue = animCurve.Evaluate(1 - (i / DialogUtils.maxTime));

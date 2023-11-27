@@ -1,6 +1,24 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
+[Serializable]
+public class PuzzleOption
+{
+    public Sprite sprite;
+    public int index;
+    public DND_Symbol_Type type;
+    public string uniqueId;
+
+    public PuzzleOption(Sprite _sprite, int _index, DND_Symbol_Type _type, string _uniqueId="")
+    {
+        sprite = _sprite;
+        index = _index;
+        type = _type;
+        uniqueId = _uniqueId != "" ? _uniqueId : "" + type + index;
+    }
+}
 
 public class SlotsManagerUI_Puzzle : MonoBehaviour
 {
@@ -8,10 +26,12 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
 
     [SerializeField] private List<PuzzleSlot> slots = new List<PuzzleSlot>();
 
-    [SerializeField] private List<DraggableSign> draggableOptions = new List<DraggableSign>();
+    [SerializeField] private List<DraggableSign_Puzzle> draggableOptions = new List<DraggableSign_Puzzle>();
+    [SerializeField] private List<BaseSlot> baseSlots = new List<BaseSlot>();
 
     private Dictionary<string, DND_Symbol_Type> symbolDictionary = new Dictionary<string, DND_Symbol_Type>();
 
+    [SerializeField] private List<ScriptablePuzzle> puzzleOption = new List<ScriptablePuzzle>();
 
     public void Initialize()
     {
@@ -25,21 +45,32 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
 
         for (int i = 0; i < splitted.Count; i++)
         {
+            print("Splitter - " + splitted[i]);
             slots[i].gameObject.SetActive(true);
             slots[i].InitializeTargetSymbol(splitted[i], i);
         }
 
         for (int i = 0; i < draggableOptions.Count; i++)
+        {
             draggableOptions[i].gameObject.SetActive(false);
+            baseSlots[i].gameObject.SetActive(false);
+        }
+
 
         // Initialize Options
         //List<CharSettings> charSettings = _.ShuffleCharSettings();
-        //for (int i = 0; i < charSettings.Count; i++)
-        //{
-        //    CharSettings setting = charSettings[i];
-        //    draggableOptions[i].gameObject.SetActive(true);
-        //    draggableOptions[i].InitializeDraggableOption(setting.type, setting.sprite);
-        //}
+        List<ScriptablePuzzle> temp = ListExtend.ShuffleList(puzzleOption);
+        for (int i = 0; i < temp.Count; i++)
+        {
+            ScriptablePuzzle tempScriptable = temp[i];
+            if (tempScriptable.Activo)
+            {
+                PuzzleOption setting = new PuzzleOption(tempScriptable.img, i, tempScriptable.type);
+                baseSlots[i].gameObject.SetActive(true);
+                draggableOptions[i].gameObject.SetActive(true);
+                draggableOptions[i].InitializeDraggableOption(setting.type, setting.sprite);
+            }
+        }
 
         ValidateManager_Puzzle._instance.Initialize(splitted.Count);
     }

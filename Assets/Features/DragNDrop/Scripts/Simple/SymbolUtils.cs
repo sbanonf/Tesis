@@ -11,7 +11,8 @@ public enum DND_Symbol_Type
    Sister_1,Sister_2, Sister_3,Sister_4,
    Brother_1,Brother_2,Brother_3,Brother_4,
    Granny_1,Granny_2,Granny_3,
-   Granf_1,Granf_2, Granf_3
+   Granf_1,Granf_2, Granf_3,
+   Z_
 }
 
 public enum Genealogic_Type

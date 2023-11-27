@@ -4,8 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-
-public class DraggableSign : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
+public class DraggableSign_Puzzle : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IPointerDownHandler
 {
     [Header("Background Image")]
     [SerializeField] Image img;
@@ -14,7 +13,7 @@ public class DraggableSign : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     [Header("Character Image")]
     [SerializeField] Image charImg;
 
-    [HideInInspector] public Transform parentAfterDrag;
+    public Transform parentAfterDrag;
     public Transform initialParentAfterDrag;
 
     Coroutine currentCoroutine = null;
@@ -93,11 +92,13 @@ public class DraggableSign : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
             if (currentCoroutine == null)
                 currentCoroutine = StartCoroutine(Checking());
             transform.SetParent(parentAfterDrag);
+            transform.localPosition = Vector3.zero;
             img.raycastTarget = true;
         }
 
+        //Debug.Log(eventData.ToString());
         GameObject dropped = eventData.pointerEnter;
-        if (dropped == null || dropped.GetComponent<ItemSlot>() == null)
+        if (dropped == null || dropped.GetComponent<PuzzleSlot>() == null)
         {
             Debug.Log(eventData.ToString());
             currentTransform.localScale = Vector2.one * SymbolUtils.maxScale;
@@ -167,5 +168,15 @@ public class DraggableSign : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
         }
 
         currentTransform.localScale = Vector3.one * scale;
+    }
+
+    public void ResetDraggablePresetAnchor()
+    {
+        RectTransform rectTransform = gameObject.GetComponent<RectTransform>();
+        //rectTransform.SetAnchor(AnchorPresets.Center);
+        rectTransform.anchorMax = Vector2.one * .5f;
+        rectTransform.anchorMin = Vector2.one * .5f;
+        //rectTransform.anchoredPosition = Vector3.zero;
+        rectTransform.localPosition = Vector3.zero;
     }
 }

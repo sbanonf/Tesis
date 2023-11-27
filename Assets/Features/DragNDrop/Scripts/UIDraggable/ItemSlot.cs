@@ -11,6 +11,7 @@ public class ItemSlot : BaseSlot
 
     protected override void ValidateOnDrop(DraggableSign draggableSign)
     {
+        print("CALL VALIDATE ON DROP");
         DND_Symbol_Type symbolType = draggableSign.SymbolType;
         CheckTargetSymbol(symbolType);
     }
