@@ -4,23 +4,23 @@ using UnityEngine;
 
 public static class SymbolUtilities
 {
-    //public static List<DND_Symbol_Type> SplitSymbol(Dictionary<string, DND_Symbol_Type> symbolDictionary, string word)
-    //{
-    //    List<DND_Symbol_Type> temp = new List<DND_Symbol_Type>();
-    //    List<string> wordList = new List<string>();
+    public static List<DND_Symbol_Type> SplitSymbol(Dictionary<string, DND_Symbol_Type> symbolDictionary, string word)
+    {
+        List<DND_Symbol_Type> temp = new List<DND_Symbol_Type>();
+        List<string> wordList = new List<string>();
 
-    //    for (int i = 0; i < word.Length; i++)
-    //    {
-    //        wordList.Add(word[i].ToString());
-    //    }
+        for (int i = 0; i < word.Length; i++)
+        {
+            wordList.Add(word[i].ToString());
+        }
 
-    //    for (int i = 0; i < wordList.Count; i++)
-    //    {
-    //        temp.Add(ParsedSymbol(symbolDictionary, wordList[i]));
-    //    }
+        for (int i = 0; i < wordList.Count; i++)
+        {
+            temp.Add(ParsedSymbol(symbolDictionary, wordList[i]));
+        }
 
-    //    return temp;
-    //}
+        return temp;
+    }
 
     public static Dictionary<string, DND_Symbol_Type> Initialize()
     {
@@ -31,10 +31,6 @@ public static class SymbolUtilities
         {
             temp.Add("" + (DND_Symbol_Type)i, (DND_Symbol_Type)i);
         }
-
-        // Father
-
-        // 
 
         return temp;
     }
