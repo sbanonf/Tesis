@@ -33,10 +33,15 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
 
     [SerializeField] private List<ScriptablePuzzle> puzzleOption = new List<ScriptablePuzzle>();
 
+    [SerializeField] List<ScriptableOptions> options=new List<ScriptableOptions>();
+    [SerializeField] List<QuestionLock> levelLocks = new List<QuestionLock>();
+
+    [SerializeField] private int index = 0;
+    
     public void Initialize()
     {
         symbolDictionary = SymbolUtilities.Initialize();
-        List<DND_Symbol_Type> splitted = SymbolUtilities.SplitSymbol(symbolDictionary, possibleWords[0].ToUpper());
+        List<DND_Symbol_Type> splitted = SymbolUtilities.SplitSymbol(symbolDictionary, possibleWords[index].ToUpper());
 
         // Initialize Targets/Slots
         //List<DND_Symbol_Type> splitted = _.correctSymbols;
@@ -45,7 +50,6 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
 
         for (int i = 0; i < splitted.Count; i++)
         {
-            print("Splitter - " + splitted[i]);
             slots[i].gameObject.SetActive(true);
             slots[i].InitializeTargetSymbol(splitted[i], i);
         }
@@ -56,10 +60,10 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
             baseSlots[i].gameObject.SetActive(false);
         }
 
-
         // Initialize Options
         //List<CharSettings> charSettings = _.ShuffleCharSettings();
-        List<ScriptablePuzzle> temp = ListExtend.ShuffleList(puzzleOption);
+        //List<ScriptablePuzzle> temp = ListExtend.ShuffleList(puzzleOption);
+        List<ScriptablePuzzle> temp = ListExtend.ShuffleList(options[index].scriptableOption);
         for (int i = 0; i < temp.Count; i++)
         {
             ScriptablePuzzle tempScriptable = temp[i];
@@ -77,9 +81,18 @@ public class SlotsManagerUI_Puzzle : MonoBehaviour
 
     public void Reset()
     {
+        options[index].isFinished = true;
+        levelLocks[index].TurnOff();
+        if (RunesManager.Instance != null)
+            RunesManager.Instance.CleanRunes();
         for (int i = 0; i < draggableOptions.Count; i++)
         {
             draggableOptions[i].ResetDraggable();
         }
+    }
+
+    public void UpdateIndex()
+    {
+        index++;
     }
 }

@@ -6,6 +6,13 @@ public class RunesManager : MonoBehaviour
 {
     public static RunesManager Instance { get; private set; }
     public int cantidad;
+
+    public List<ScriptablePuzzle> savedRunes = new List<ScriptablePuzzle>();
+
+    [SerializeField] int countRunes;
+    public int CountRunes => countRunes;
+
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -19,16 +26,29 @@ public class RunesManager : MonoBehaviour
     }
     private void Start()
     {
-        RunesManager.Instance.cantidad = 0;
+        cantidad = 0;
     }
 
     public void Aumentar() {
-        RunesManager.Instance.cantidad += 1;
+        cantidad += 1;
     }
 
     public void Reiniciar() {
-        RunesManager.Instance.cantidad = 0;
+        cantidad = 0;
     }
 
+    public void SaveRune(ScriptablePuzzle _)
+    {
+        savedRunes.Add(_);
+    }
 
+    public void CountRuneUnits()
+    {
+        countRunes++;
+    }
+
+    public void CleanRunes()
+    {
+        savedRunes.Clear();
+    }
 }

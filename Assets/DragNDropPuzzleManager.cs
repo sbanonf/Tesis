@@ -27,4 +27,9 @@ public class DragNDropPuzzleManager : MonoBehaviour
     {
         slotsManagerUI.Reset();
     }
+
+    public void UpdateIndex()
+    {
+        slotsManagerUI.UpdateIndex();
+    }
 }

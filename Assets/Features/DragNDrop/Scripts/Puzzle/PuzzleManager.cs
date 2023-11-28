@@ -24,11 +24,11 @@ public class PuzzleManager : MonoBehaviour
 
     public void Initialize()
     {
-        //canvasGroup.CanvasGroupFade(0);
-        //canvasGroup.CanvasGroupInteractable(false);
-        //genealogicUI_GO.SetActive(false);
+        canvasGroup.CanvasGroupFade(0);
+        canvasGroup.CanvasGroupInteractable(false);
+        genealogicUI_GO.SetActive(false);
         // ! TODO: Change this stuff, is just for testing
-        Select();
+        //Select();
     }
 
     public void Select()
@@ -75,6 +75,7 @@ public class PuzzleManager : MonoBehaviour
             }
             canvasGroup.CanvasGroupInteractable(false);
             dragNDropManager.Reset();
+            dragNDropManager.UpdateIndex();
             genealogicUI_GO.SetActive(false);
         }
 

@@ -4,7 +4,14 @@ using UnityEngine;
 
 public class PuzzleGameManager : MonoBehaviour
 {
+    public static PuzzleGameManager _instance;
     [SerializeField] PuzzleManager puzzleManager;
+
+
+    private void Awake()
+    {
+        _instance = this;
+    }
 
     private void Start()
     {

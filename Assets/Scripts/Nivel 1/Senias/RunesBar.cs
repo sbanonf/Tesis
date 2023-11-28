@@ -11,6 +11,7 @@ public class RunesBar : MonoBehaviour
     public TextMeshProUGUI text2;
     public GameObject gameObject;
     public int cont = 0;
+
     private void Start()
     {
         mSlider = GetComponent<Slider>();
@@ -20,8 +21,10 @@ public class RunesBar : MonoBehaviour
     private void Update()
     {
         text.text = mSlider.value.ToString();
-        text2.text = mSlider.maxValue.ToString();
+        //text2.text = mSlider.maxValue.ToString();
+        text2.text = ""+RunesManager.Instance.CountRunes;
         mSlider.value = RunesManager.Instance.cantidad;
+
         if (RunesManager.Instance.cantidad == mSlider.maxValue) {
             if (cont == 0) {
                 AudioManager.instance.Play("Fin");
