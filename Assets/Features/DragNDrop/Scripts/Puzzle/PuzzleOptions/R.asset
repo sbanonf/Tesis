@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: R
   m_EditorClassIdentifier: 
   Descripcion: "\xD1"
-  img: {fileID: 486126170, guid: f0ddcd059209e4c488ae5204f958ded2, type: 3}
+  img: {fileID: -1522865031, guid: 798295400ae5e4a0884d2a45bece8c25, type: 3}
   type: 18
   Activo: 0

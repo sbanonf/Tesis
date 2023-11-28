@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Y
   m_EditorClassIdentifier: 
   Descripcion: "\xD1"
-  img: {fileID: 116557823, guid: f0ddcd059209e4c488ae5204f958ded2, type: 3}
+  img: {fileID: 471765828, guid: 798295400ae5e4a0884d2a45bece8c25, type: 3}
   type: 25
   Activo: 0
