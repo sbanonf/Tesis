@@ -38,6 +38,8 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private CharacterUITemplate npcChar;
 
     [Header("Dialog Member")]
+    [SerializeField] private Image mainCharacter;
+    [SerializeField] private Image NPC;
     [SerializeField] private DialogMember tempSpeech;
 
     [SerializeField] AnimationCurve animCurve;
@@ -75,6 +77,9 @@ public class DialogSystem : MonoBehaviour
     public void CallSpeech(DialogMember _)
     {
         tempSpeech = _;
+        (Sprite, Sprite) conversationMembers = _.ConversationMembersImages();
+        (mainCharacter.sprite,NPC.sprite) = conversationMembers;
+
         if (currentCoroutine == null)
             currentCoroutine = StartCoroutine(AnimateDialog());
     }
@@ -108,8 +113,8 @@ public class DialogSystem : MonoBehaviour
         int wordCounter = 0;
         List<string> tempPhrase = new List<string>();
 
-        tempPhrase = tempSpeech.DialogCharacters[0].speech;
-        yield return SelectCharacterDialog(tempSpeech.DialogCharacters[characterIndex]);
+        tempPhrase = tempSpeech.DialogCharacters.Conversation[0].speech;
+        yield return SelectCharacterDialog(tempSpeech.DialogCharacters.Conversation[characterIndex]);
 
         while (true)
             //If wordcounter is less than the tempPhrase size, then run
@@ -137,14 +142,14 @@ public class DialogSystem : MonoBehaviour
             else
             {
                 yield return new WaitForSeconds(.5f);
-                if (characterIndex < tempSpeech.DialogCharacters.Count - 1)
+                if (characterIndex < tempSpeech.DialogCharacters.Conversation.Count - 1)
                 {
                     characterIndex++;
 
                     dialogText.text = "";
 
-                    tempPhrase = tempSpeech.DialogCharacters[characterIndex].speech;
-                    yield return SelectCharacterDialog(tempSpeech.DialogCharacters[characterIndex]);
+                    tempPhrase = tempSpeech.DialogCharacters.Conversation[characterIndex].speech;
+                    yield return SelectCharacterDialog(tempSpeech.DialogCharacters.Conversation[characterIndex]);
 
                     wordCounter = 0;
                 }
@@ -171,7 +176,7 @@ public class DialogSystem : MonoBehaviour
         {
             float tempValue = animCurve.Evaluate(i / DialogUtils.maxTime);
 
-            if (_.dialogCharacter == DialogCharactersEnum.MainCharacter)
+            if (_.character.dialogCharacter == DialogCharactersEnum.MainCharacter)
             {
                 mainChar.CanvasGroupFade(tempValue);
                 if (npcChar.GetCanvasGroupFade() > 0)
@@ -184,11 +189,11 @@ public class DialogSystem : MonoBehaviour
                     mainChar.CanvasGroupFade(1 - tempValue);
             }
 
-            SetDialogVisualsLerp(_.dialogCharacter, tempValue);
+            SetDialogVisualsLerp(_.character.dialogCharacter, tempValue);
 
             yield return null;
 
-            if (_.dialogCharacter == DialogCharactersEnum.MainCharacter)
+            if (_.character.dialogCharacter == DialogCharactersEnum.MainCharacter)
             {
                 if (i <= 0)
                     npcChar.CanvasGroupInteractable(false);

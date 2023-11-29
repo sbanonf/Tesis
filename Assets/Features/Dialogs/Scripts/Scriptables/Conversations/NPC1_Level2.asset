@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29798f67670fd4d208b3e3c3edb75043, type: 3}
+  m_Name: NPC1_Level2
+  m_EditorClassIdentifier: 
+  conversation:
+  - character: {fileID: 11400000, guid: 51f7b78a1612b4e6fb3bc6918c21ed41, type: 2}
+    speech:
+    - Speech - Main Char - phrase 1, saying something
+  - character: {fileID: 11400000, guid: 37b49bbf64bbc4c7fa33fc084b34b681, type: 2}
+    speech:
+    - Speech - Main Char - phrase 1, saying something
+    - Speech - Main Char - phrase 2, saying something
+  - character: {fileID: 11400000, guid: 51f7b78a1612b4e6fb3bc6918c21ed41, type: 2}
+    speech:
+    - Speech - Main Char - phrase 2, saying something
+    - Speech - Main Char - phrase 3, saying something

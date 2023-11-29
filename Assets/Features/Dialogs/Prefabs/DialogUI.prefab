@@ -432,6 +432,8 @@ MonoBehaviour:
   mainChar: {fileID: 2445609970098404778}
   npcColor: {r: 1, g: 0.9254902, b: 0.8, a: 1}
   npcChar: {fileID: 7161125086002461349}
+  mainCharacter: {fileID: 7161125087230577270}
+  NPC: {fileID: 7161125086233310570}
   tempSpeech: {fileID: 0}
   animCurve:
     serializedVersion: 2
